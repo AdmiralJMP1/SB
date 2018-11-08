@@ -4,7 +4,7 @@
   "description": "\"# SB\"",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node -r @babel/register -r @babel/polyfill server.js"
   },
   "repository": {
     "type": "git",

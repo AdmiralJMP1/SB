@@ -1,5 +1,5 @@
 function main(req, res) {
-    res.render('index');
+  res.render('index');
 }
 
 export default main;

@@ -1,0 +1,13 @@
+extends modules/main
+
+block vars
+	- var title = 'Логин';
+
+block content
+	h1 Авторизация
+	form(name="signin" method="post" action="signin")#signin
+		label(for="email") Email Address
+		input.text(name="email" type="text")
+		label(for="password") Password
+		input(name="password" type="password")
+		input.btn(type="submit" value="Sign In")

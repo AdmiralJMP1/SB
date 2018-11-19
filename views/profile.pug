@@ -1,0 +1,12 @@
+extends modules/main
+
+block vars
+	- var title = 'Ваш профиль';
+
+block content
+	h1 Профиль
+	if isAuthenticated
+		.fn ваше имя !{firstName}
+		.sn ваша фамилия !{secondName}
+	else
+		.err Эта страница для авторизованных пользователей

@@ -1,0 +1,21 @@
+extends modules/main
+
+block vars
+	- var title = 'Логин';
+
+block content
+	h1 Регистрация
+	form#signup(name="signup" method="post" action="/signup")
+		label(for="email") Email Address
+		input.text(name="email" type="email" required)
+		label(for="firstname") Firstname
+		input(name="firstname" type="text" required)
+		label(for="secondname") secondname
+		input(name="secondname" type="text" required)
+		label(for="password") Password
+		input(name="password" type="password" required)
+		select(name='role' required)
+			option(disabled) Выберите роль
+			option(value='1') Заказчик
+			option(value='2') Исполнитель
+		input.btn(type="submit" value="Sign Up")

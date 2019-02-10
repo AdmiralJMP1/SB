@@ -1,0 +1,17 @@
+.item__menu {
+  position: absolute;
+  right: -200px;
+  top: -8px;
+  width: 200px;
+  padding: 5px;
+  background-color: #333;
+  border-radius: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+.row__delete {
+  border: none;
+  background: none;
+  color: #fff;
+  font-size: 22px;
+}

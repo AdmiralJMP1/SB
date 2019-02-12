@@ -1,0 +1,22 @@
+extends modules/main
+
+block vars
+  - var title = 'Заказ "' + header + '"';
+
+block content
+  .order
+    h1.order__header !{header}
+    .order__info
+      a(href="author_link").order__author !{author}
+      .order__term
+        if price
+          .order__price Цена: !{price}
+        else
+          .order__price Цена: по договоренности
+        if time
+          .order__time Срок !{time} дней
+        else
+          .order__time Сроки по договоренности
+    .order__text !{text}
+
+

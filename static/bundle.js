@@ -86,17 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/1.styl":
-/*!********************!*\
-  !*** ./src/1.styl ***!
-  \********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./src/1.styl?");
-
-/***/ }),
-
 /***/ "./src/2.styl":
 /*!********************!*\
   !*** ./src/2.styl ***!
@@ -116,7 +105,29 @@ eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./sr
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _1_styl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./1.styl */ \"./src/1.styl\");\n/* harmony import */ var _1_styl__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_1_styl__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _2_styl__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./2.styl */ \"./src/2.styl\");\n/* harmony import */ var _2_styl__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_2_styl__WEBPACK_IMPORTED_MODULE_1__);\n\r\n\r\n\r\nconsole.log(\"it's work\");\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _normalize_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./normalize.css */ \"./src/normalize.css\");\n/* harmony import */ var _normalize_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_normalize_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _main_styl__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./main.styl */ \"./src/main.styl\");\n/* harmony import */ var _main_styl__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_main_styl__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _2_styl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./2.styl */ \"./src/2.styl\");\n/* harmony import */ var _2_styl__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_2_styl__WEBPACK_IMPORTED_MODULE_2__);\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/app.js?");
+
+/***/ }),
+
+/***/ "./src/main.styl":
+/*!***********************!*\
+  !*** ./src/main.styl ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./src/main.styl?");
+
+/***/ }),
+
+/***/ "./src/normalize.css":
+/*!***************************!*\
+  !*** ./src/normalize.css ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./src/normalize.css?");
 
 /***/ })
 

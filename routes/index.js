@@ -5,7 +5,7 @@ import signupPage from './signup';
 import profilePage from './profile';
 import orderPage from './orderPage';
 import createOrderPage from './createOrder';
-
+import createOrderPost from  './createOrderPost';
 
 function router(app) {
   app.get('/', main);
@@ -18,18 +18,20 @@ function router(app) {
     });
   });
   app.get('/order/:id', orderPage);
-  app.get('/create-order', createOrderPage);
+  // app.get('/create-order', createOrderPage);
+  app.get('/create-order/:errors*?', createOrderPage);
 
   app.post('/signup', passport.authenticate('local-signup',  {
-      successRedirect: '/dashboard',
+      successRedirect: '/profile',
       failureRedirect: '/signupError'
     }
   ));
   app.post('/signin', passport.authenticate('local-signin',  {
-      successRedirect: '/dashboard',
+      successRedirect: '/profile',
       failureRedirect: '/signinError'
     }
   ));
+  app.post('/create-order', createOrderPost);
 }
 
 function isLoggedIn(req, res, next) {

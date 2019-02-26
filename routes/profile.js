@@ -6,7 +6,7 @@ function profilePage(req, res) {
       secondName: req.user.secondName,
     });
   } else {
-    res.render('profile')
+    res.redirect('/signin');
   }
 
 }

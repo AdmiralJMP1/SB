@@ -6,12 +6,14 @@ import profilePage from './profile';
 import orderPage from './orderPage';
 import createOrderPage from './createOrder';
 import createOrderPost from  './createOrderPost';
+import searchPage from './search';
 
 function router(app) {
   app.get('/', main);
   app.get('/signin', signinPage);
   app.get('/signup', signupPage);
   app.get('/profile', profilePage);
+  app.get('/search/:order*?', searchPage);
   app.get('/logout', function (req,res) {
     req.session.destroy(function(err) {
       res.redirect('/');

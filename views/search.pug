@@ -1,0 +1,48 @@
+extends modules/main
+
+block vars
+  - var title = 'Список заказов';
+
+block content
+  h1 Поиск заказов
+  if orders.length > 0
+    ul.orders
+      each item in orders
+        li.orders__item
+          .orders__item-header= item.header
+          .orders__item-text= item.text
+          .orders__item-info
+            .orders__item-author= item.author
+            if item.time
+              .orders__item-time= item.time
+            if item.price
+              .orders__item-price= item.price
+    .search-navigation
+      if !isFirstPage
+        a(href="/search/" + (currentPage - 1)).search-navigation__prev <
+        a(href="/search/" + (currentPage - 1)).search-navigation__link= currentPage - 1
+      .search-navigation__current= currentPage
+      if !isLastPage
+        a(href="/search/" + (currentPage + 1)).search-navigation__link= currentPage + 1
+        a(href="/search/" + (currentPage + 1)).search-navigation__next >
+  else
+    .orders-not-found Заказов не найдено
+    a(href="/search/1") Вернуться на первую страницу поиска
+
+  //if errors.length > 0
+  //  ul.errors-tab
+  //    each item in errors
+  //      li.errors-tab__item= item
+  //if employer
+  //  form(name="create-order" method="post" action="/create-order" autocomplete="on")#create-order
+  //    label(for="header") Введите заголовок заказа *
+  //    input.text(name="header" placeholder="Заголовок..." required)
+  //    label(for="") Введите краткое описание *
+  //    input.text(name="info" type="text" placeholder="Описание..." required)
+  //    label(for="") Укажите цену в рублях
+  //    input(name="price" type="number")
+  //    label(for="time") Укажите срок в днях
+  //    input(name="time" type="number")
+  //    input.btn(type="submit" value="Создать заказ")
+  //else
+  //  .access-warning Это страница для пользователей являющихся заказчиками.
